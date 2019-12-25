@@ -1,0 +1,136 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Sassy Base</title>
+  <meta name="description" content="A minimalistic HTML + CSS + JS base front-end framework for simple web site projects." />
+
+  <!-- VIEWPORT FOR MOBILE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- MAIN CSS FILE -->
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+  <!-- FANCYBOX 3 CSS -->
+  <link rel="stylesheet" type="text/css" href="js/fancybox/dist/jquery.fancybox.min.css">
+
+  <!-- ADOBE FONTS-->
+  <link rel="stylesheet" href="https://use.typekit.net/bnm7oer.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="site-id">
+      <h1><a href="index.html">Miyuki Sekiguchi</a></h1>
+    </div>
+    <nav class="site-nav">
+      <div class="menu-button navicon">Menu</div>
+      <ul>
+
+        <li><a href="work">work</a></li>
+        <li><a href="about me">about me</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+
+      <div class="half-circles">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4">
+          <h2>Portfolio</h2>
+          <p>I am Miyuki, an Interface Design student in the New Media Arts Program at Kapi‘olani Community College.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="typography" data-scroll="out">
+    <div class="container">
+
+      <h1 class="mainhead">Headline Title</h1>
+      <h2 class="subhead">This is a Subheader</h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="#">Link</a>Lorem Ipsum has
+        been the industry's standard dummy text ever since the <em>1500s</em>, when an <strong>unknown </strong>printer
+        took a galley of type and scrambled it to make a type specimen book.</p>
+
+      <button>This is a Button</button>
+      <a class="button" href="#">This is a Button Link</a>
+      <a class="button alt" href="#">This is a Button Link Alt</a>
+
+    </div>
+  </section>
+
+  <section id="layout" class="split-crossed-left" data-scroll="out">
+    <div class="container">
+
+      <div class="image-block">
+        <a href="img/bracelet1.JPG" data-fancybox="gallery" data-caption="bracelet1"><img src="img/bracelet1.JPG" alt="movie poster" /></a>
+      </div>
+
+      <div class="text-block">
+        <h4>Text on the Right</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+          crambled it to make a type specimen book. </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="layout" class="split-crossed-left" data-scroll="out">
+    <div class="container">
+
+      <div class="image-block">
+        <img src="img/img500x500.png" alt="500x500">
+      </div>
+
+      <div class="text-block">
+        <h4>Text on the Left</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <nav class="site-nav">
+      <ul>
+        <li><a href="#work">work</a></li>
+        <li><a href="#about me">about me</a></li>
+        <li><a href="#contact">ontact</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+
+
+  <!-- SMOOTH SCROLL JS-->
+  <script src="js/smooth-scroll.polyfills.min.js"></script>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
+
+  <!-- SCROOL OUT SCROLL TRIGGERD ANIMATION -->
+  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+  <script>
+    ScrollOut({
+      threshold: 0.4
+    });
+  </script>
+
+
+  <!-- FANCYBOX 3 JS FILE -->
+  <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="js/fancybox/dist/jquery.fancybox.min.js"></script>
+
+  <!--MAIN JS -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
