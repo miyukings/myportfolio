@@ -224,11 +224,14 @@ body {
 .container {
   border: solid 1px black; }
 
+body {
+  background-color: #bef1f5; }
+
 /* site header and footer */
 .site-header, .site-footer {
   background-color: white;
   padding: 1em;
-  color: rgba(46, 235, 248, 0.5);
+  color: #36c4d6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,12 +239,12 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between; }
   .site-header h1, .site-footer h1 {
-    font-family: rgba(46, 235, 248, 0.5);
+    font-family: #36c4d6;
     font-size: 1.5em;
     margin: .5em 0 0 0;
     /* to adjust baseline with nav text */ }
   .site-header a, .site-footer a {
-    color: rgba(46, 235, 248, 0.5);
+    color: #36c4d6;
     text-decoration: none; }
 
 /* SITE HEADER */
@@ -256,7 +259,7 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   margin-top: 6em;
-  background-color: #000; }
+  background-color: #fff; }
 
 /* SITE NAVIGATION */
 .site-header .site-nav {
@@ -372,15 +375,20 @@ body {
   transition: .4s all ease-out; }
 
 section {
-  padding: 2em 0;
+  margin: 2em 0;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
 
+.mainhead {
+  font-size: 4em;
+  color: #36c4d6; }
+
 /* Hero Sections */
-.hero .container {
+.hero .box1 {
+  margin: 0 auto;
   width: 1500px;
   height: 750px;
   border: 1px solid green; }
@@ -391,59 +399,66 @@ section {
   align-items: baseline; }
 
 .hero {
-  background-color: #bef1f5;
-  padding: 4em 1em;
+  margin-top: 0;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .hero .container h2 {
-    font-size: 4em;
-    margin: 0;
-    color: rgba(46, 235, 248, 0.5); }
-  .hero .container .half-circles {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: left;
-    -ms-flex-pack: left;
-    justify-content: left;
-    -ms-flex-line-pack: start;
-    align-content: flex-start;
-    padding: 0; }
-    .hero .container .half-circles .circle1 {
-      position: absolute;
-      width: 1000px;
-      height: 500px;
-      border-radius: 500px 500px 0 0;
-      background: #058d8d;
-      z-index: 100px;
-      bottom: 0; }
-    .hero .container .half-circles .circle2 {
-      position: absolute;
-      width: 900px;
-      height: 450px;
-      border-radius: 450px 450px 0 0;
-      background: #36c4d6;
-      z-index: 200px;
-      bottom: 0; }
-    .hero .container .half-circles .circle3 {
-      position: absolute;
-      width: 800px;
-      height: 400px;
-      border-radius: 400px 400px 0 0;
-      background: #8ff0f3;
-      z-index: 300px;
-      bottom: 0; }
-    .hero .container .half-circles .circle4 {
-      position: absolute;
-      width: 700px;
-      height: 350px;
-      border-radius: 350px 350px 0 0;
-      background: white;
-      z-index: 500px;
-      bottom: 0;
-      margin-left: 0; }
+  .hero .box1 {
+    margin: 0 auto; }
+    .hero .box1 h2 {
+      font-size: 4em;
+      margin: 0;
+      padding-left: 350px;
+      padding-top: 200px;
+      color: #36c4d6; }
+    .hero .box1 p {
+      color: #36c4d6;
+      margin: 0 auto;
+      padding: 50px; }
+    .hero .box1 .half-circles {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: left;
+      -ms-flex-pack: left;
+      justify-content: left;
+      -ms-flex-line-pack: start;
+      align-content: flex-start;
+      padding: 0 auto 20px 0; }
+      .hero .box1 .half-circles .circle1 {
+        position: absolute;
+        width: 1200px;
+        height: 600px;
+        border-radius: 600px 600px 0 0;
+        background: #058d8d;
+        z-index: 100px;
+        bottom: 0; }
+      .hero .box1 .half-circles .circle2 {
+        position: absolute;
+        width: 1100px;
+        height: 550px;
+        border-radius: 550px 550px 0 0;
+        background: #36c4d6;
+        z-index: 200px;
+        bottom: 0; }
+      .hero .box1 .half-circles .circle3 {
+        position: absolute;
+        width: 1000px;
+        height: 500px;
+        border-radius: 500px 500px 0 0;
+        background: #8ff0f3;
+        z-index: 300px;
+        bottom: 0; }
+      .hero .box1 .half-circles .circle4 {
+        position: absolute;
+        width: 900px;
+        height: 450px;
+        border-radius: 450px 450px 0 0;
+        background: white;
+        z-index: 500px;
+        bottom: 0;
+        margin-left: 0; }
 
 /* Layout section */
 @media (min-width: 768px) {
