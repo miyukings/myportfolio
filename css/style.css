@@ -30,14 +30,14 @@ CSS Table OF CONTENTS*
   ----------------------------------------------- */
 /* BODY */
 body {
-  font-family: "muli", sans-serif;
+  font-family: "miller-banner, serif";
   font-size: 100%;
   line-height: 1.4em;
   color: black; }
 
 /* HEADINGS */
 h1, h2, h3 {
-  font-family: "garamond-premier-pro-display", serif;
+  font-family: "cronos-pro, sans-serif";
   margin: .5em 0;
   font-weight: 400; }
 
@@ -72,7 +72,7 @@ hr {
 
 /* HELPER */
 .sectionhead {
-  font-family: "muli", sans-serif;
+  font-family: "miller-banner, serif";
   text-align: center;
   line-height: 1;
   text-transform: uppercase;
@@ -102,7 +102,7 @@ hr {
 button,
 .button {
   font-size: inherit;
-  font-family: "muli", sans-serif;
+  font-family: "miller-banner, serif";
   background-color: #79d131;
   line-height: 1;
   color: #fff;
@@ -213,13 +213,9 @@ body {
       .row .column.two-thirds {
         width: 64.6666%; }
       .row .column.one-fourth {
-        width: 23%; } }
-
-.row.demo .column {
-  background: #878787;
-  padding: 1em;
-  text-align: center;
-  color: white; }
+        width: 23%; }
+      .row .column.one-fifth {
+        width: 18%; } }
 
 .container {
   border: solid 1px black; }
@@ -403,11 +399,12 @@ section {
     margin: 100px auto 0;
     position: relative; }
     .hero .container h2 {
-      font-size: 4em;
+      font-size: 8em;
       margin: 0;
-      padding-left: 280px;
-      padding-top: 130px;
-      color: #36c4d6; }
+      padding-left: 170px;
+      padding-top: 200px;
+      color: #36c4d6;
+      font-family: "cronos-pro, sans-serif"; }
     .hero .container p {
       color: #36c4d6;
       margin: 0 auto;
@@ -448,44 +445,42 @@ section {
         bottom: 0; }
 
 /* Layout section */
-.split-crossed-left {
+#works {
   margin: 0 auto; }
+  #works h3 {
+    text-align: center; }
   @media (min-width: 768px) {
-    .split-crossed-left .container {
+    #works .container {
+      margin: 0 auto;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center; }
-    .split-crossed-left .image-block {
-      width: 50%; }
-    .split-crossed-left .text-block {
-      width: 50%;
-      -webkit-transform: translateX(-2em);
-      -ms-transform: translateX(-2em);
-      transform: translateX(-2em); } }
-
-/* Layout section */
-@media (min-width: 768px) {
-  .split-crossed-reversed .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-  .split-crossed-reversed .image-block {
-    width: 50%; }
-  .split-crossed-reversed .text-block {
-    width: 50%;
-    -webkit-transform: translateX(2em);
-    -ms-transform: translateX(2em);
-    transform: translateX(2em); } }
+      align-items: center;
+      /*position: absolute; */ }
+      #works .container .row-subjects {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        #works .container .row-subjects .row-subjects .column {
+          -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+          flex-grow: 1;
+          /*.column.one-fifth {
+                 margin: 1%; 
+                 }
+                 .one-fifth.top {
+                     position: relative;
+                     top: 0;
+                 }
+                 .one-fifth.bottom {
+                     position: relative;
+                     top: 25%;
+                 } */ } }
 
 /* ABOUT ME SECTION */
 #about .container {
