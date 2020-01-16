@@ -357,11 +357,12 @@ section {
 
  /* PRINT PAGE */
  @media (min-width: $breakpoint-small) {
-     .split-box {
+    .split-box {
          position: absolute;
          width: 50%;
          height: 100%;
          padding: 1em;
+         margin: 100px auto;
      }
 
      .left-box {
@@ -369,16 +370,22 @@ section {
          background: white;
          color: gray;
     
-
-      
      }
 
      .right-box {
         right: 0;
         overflow-y: scroll;
-        background: #000000;}
-     
+        background: #000000;
+        
+     h2 {
+        color: #fff;
+        text-align: right;}
+    
+    a:hover {
+        color: hotpink;
+        text-align: right;}
     }
+      }
 
 
  
