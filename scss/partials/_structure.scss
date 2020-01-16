@@ -270,9 +270,6 @@ section {
         
         
     
-    
-
-
 
 
 /* ABOUT ME SECTION */
@@ -295,14 +292,12 @@ section {
         margin: 100px auto 0;
         position: relative;
         padding: 0;
-     
-     
+
          h2 {
              font-size: 2em;
              margin: 0;
              padding-left: 330px;
              padding-top: 50px;
-            
              color: $type-color-body; 
          }
      
@@ -311,14 +306,13 @@ section {
                  border-radius: 50%;
              }
             
-             padding-left: 300px;
-            
+             padding-left: 300px; 
          }
-  
+         @media (min-width: $breakpoint-small) {
      .half-circles{ 
         width: 100%;
         padding: 25% 0 2% 0;
-         
+     }
      .circle5 {
      
          position: absolute;
@@ -326,7 +320,7 @@ section {
         height: 100%;
          border-radius: 0 0 50% 50%/0 0 100% 100%;
          background: rgb(5, 141, 141);
-         z-index:-1px;
+         //z-index:-1px;
          top: 0; 
      }
      .circle6 {
@@ -336,10 +330,9 @@ section {
         height: 90%;
          border-radius: 0 0 50% 50%/0 0 100% 100%;
          background: rgb(54, 196, 214);
-         z-index:-1px;
-         top: 0;
-     }
- 
+         //z-index:-1px;
+         top: 0;}
+         
      .circle7 {
      
          position: absolute;
@@ -347,10 +340,9 @@ section {
          height: 80%;
          border-radius: 0 0 50% 50%/0 0 100% 100%;
          background:  rgb(143, 240, 243);
-         z-index:-1px;
-         top: 0;
-     }
- 
+         //z-index:-1px;
+         top: 0;}
+         
      .circle8 {
        
          position: absolute;
@@ -358,12 +350,40 @@ section {
          height: 70%;
          border-radius: 0 0 50% 50%/0 0 100% 100%;
          background: white;
-         z-index: -1px;
-         top: 0;
+         //z-index: -1px;
+         top: 0;}
         
+     }}}
+
+ /* PRINT PAGE */
+ @media (min-width: $breakpoint-small) {
+     .split-box {
+         position: absolute;
+         width: 50%;
+         height: 100%;
+         padding: 1em;
+     }
+
+     .left-box {
+         left: 0;
+         background: white;
+         color: gray;
+    
+
+      
+     }
+
+     .right-box {
+        right: 0;
+        overflow-y: scroll;
+        background: #000000;}
+     
+    }
+
+
  
-     }}
- }}
+     
+ 
  
 
 
@@ -416,6 +436,7 @@ section {
 [data-scroll].split-crossed-reversed  .text-block {
      transform: translateX(-4em);
  }
+
 
 
  

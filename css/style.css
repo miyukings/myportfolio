@@ -500,41 +500,54 @@ section {
       padding-left: 300px; }
       #about .container p img {
         border-radius: 50%; }
-    #about .container .half-circles {
-      width: 100%;
-      padding: 25% 0 2% 0; }
-      #about .container .half-circles .circle5 {
+    @media (min-width: 768px) {
+      #about .container .half-circles {
+        width: 100%;
+        padding: 25% 0 2% 0; }
+      #about .container .circle5 {
         position: absolute;
         width: 100%;
         height: 100%;
         border-radius: 0 0 50% 50%/0 0 100% 100%;
         background: #058d8d;
-        z-index: -1px;
         top: 0; }
-      #about .container .half-circles .circle6 {
+      #about .container .circle6 {
         position: absolute;
         width: 90%;
         height: 90%;
         border-radius: 0 0 50% 50%/0 0 100% 100%;
         background: #36c4d6;
-        z-index: -1px;
         top: 0; }
-      #about .container .half-circles .circle7 {
+      #about .container .circle7 {
         position: absolute;
         width: 80%;
         height: 80%;
         border-radius: 0 0 50% 50%/0 0 100% 100%;
         background: #8ff0f3;
-        z-index: -1px;
         top: 0; }
-      #about .container .half-circles .circle8 {
+      #about .container .circle8 {
         position: absolute;
         width: 70%;
         height: 70%;
         border-radius: 0 0 50% 50%/0 0 100% 100%;
         background: white;
-        z-index: -1px;
-        top: 0; }
+        top: 0; } }
+
+/* PRINT PAGE */
+@media (min-width: 768px) {
+  .split-box {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    padding: 1em; }
+  .left-box {
+    left: 0;
+    background: white;
+    color: gray; }
+  .right-box {
+    right: 0;
+    overflow-y: scroll;
+    background: #000000; } }
 
 /* SCROLL TRIGGERED ANIMATION VIA SCROLLOUT */
 [data-scroll] {
