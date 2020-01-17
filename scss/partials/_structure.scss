@@ -34,7 +34,7 @@ body {
 /* SITE FOOTER */
 .site-footer {
     justify-content: center;
-    margin-top: 6em;
+    //margin-top: 6em;
     background-color: #fff;
 }
 
@@ -203,6 +203,7 @@ section {
         background: rgb(5, 141, 141);
         z-index:-1;
         bottom: 0; 
+        // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
     }
     .circle2 {
 
@@ -279,7 +280,7 @@ section {
 #about .container {
    margin: 0 auto;
     width: 100%;
-    height: 600px;
+    // height: 600px;
    // border: 1px solid green;
 }
 
@@ -289,29 +290,31 @@ section {
      display: flex;
  
      .container {
-        margin: 100px auto 0;
+        margin: 0 auto;
         position: relative;
         padding: 0;
 
          h2 {
              font-size: 2em;
              margin: 0;
-             padding-left: 330px;
-             padding-top: 50px;
+             padding-left: 20%;
+             padding-top: 20px;
              color: $type-color-body; 
          }
      
          p { 
+            padding-left: 20%;
              img {
-                 border-radius: 50%;
+                 border-radius: 50%; 
+                 
              }
             
-             padding-left: 300px; 
+             
          }
          @media (min-width: $breakpoint-small) {
      .half-circles{ 
         width: 100%;
-        padding: 25% 0 2% 0;
+        padding: 2% 0 25% 0;
      }
      .circle5 {
      
@@ -320,7 +323,7 @@ section {
         height: 100%;
          border-radius: 0 0 50% 50%/0 0 100% 100%;
          background: rgb(5, 141, 141);
-         //z-index:-1px;
+         z-index:-1;
          top: 0; 
      }
      .circle6 {
@@ -330,7 +333,7 @@ section {
         height: 90%;
          border-radius: 0 0 50% 50%/0 0 100% 100%;
          background: rgb(54, 196, 214);
-         //z-index:-1px;
+         z-index:-1;
          top: 0;}
          
      .circle7 {
@@ -340,7 +343,7 @@ section {
          height: 80%;
          border-radius: 0 0 50% 50%/0 0 100% 100%;
          background:  rgb(143, 240, 243);
-         //z-index:-1px;
+         z-index:-1;
          top: 0;}
          
      .circle8 {
@@ -350,43 +353,46 @@ section {
          height: 70%;
          border-radius: 0 0 50% 50%/0 0 100% 100%;
          background: white;
-         //z-index: -1px;
+         z-index: -1;
          top: 0;}
         
      }}}
 
  /* PRINT PAGE */
  @media (min-width: $breakpoint-small) {
-    .split-box {
-         position: absolute;
-         width: 50%;
-         height: 100%;
-         padding: 1em;
-         margin: 100px auto;
-     }
+    #print {
+        min-height: 100vh;
+        background: #000;
+        color: gray;
+        display: grid;
+        grid-template-columns: 60% 40%;
+      
+      
+        footer.site-footer .site-nav {
+            margin-top: 0;
+        }
 
-     .left-box {
-         left: 0;
-         background: white;
-         color: gray;
-    
-     }
+        .split-box {
+            height: 100%;
+            margin-top: 150px;
+        }
 
-     .right-box {
-        right: 0;
-        overflow-y: scroll;
-        background: #000000;
-        
-     h2 {
-        color: #fff;
-        text-align: right;}
-    
-    a:hover {
-        color: hotpink;
-        text-align: right;}
+        .split-box:first-child {
+            background: #fff;
+            img h2 p {
+                margin: 0 auto;
+            }
+        }
+
+        .split-box:last-child {
+            background: #000;
+
+            
+        }
     }
-      }
-
+    
+    
+}
 
  
      
