@@ -549,13 +549,10 @@ section {
       margin-top: 150px; }
     #print .split-box:first-child {
       background: #fff; }
-      #print .split-box:first-child img h2 p {
-        -ms-flex-item-align: auto;
-        -ms-grid-row-align: auto;
-        align-self: auto; }
     #print .split-box:last-child {
       background: #058d8d; }
       #print .split-box:last-child h2 a {
+        text-decoration: none;
         padding: 0 .3em;
         background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, yellow));
         background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 50%, yellow 50%);
@@ -584,6 +581,15 @@ section {
         animation: small 0.1s;
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards; } }
+
+/* PICTOGRAM PAGE */
+.pictgrams img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 /* SCROLL TRIGGERED ANIMATION VIA SCROLLOUT */
 [data-scroll] {
