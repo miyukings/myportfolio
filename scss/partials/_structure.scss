@@ -362,15 +362,11 @@ section {
  @media (min-width: $breakpoint-small) {
     #print {
         min-height: 100vh;
-        background: #000;
+        //background: #000;
         color: gray;
         display: grid;
         grid-template-columns: 60% 40%;
       
-      
-        footer.site-footer .site-nav {
-            margin-top: 0;
-        }
 
         .split-box {
             height: 100%;
@@ -379,14 +375,44 @@ section {
 
         .split-box:first-child {
             background: #fff;
+           
             img h2 p {
-                margin: 0 auto;
+                align-self: auto;
             }
+          
+
         }
+        
 
         .split-box:last-child {
-            background: #000;
-
+            background: rgb(5, 141, 141);
+            h2 a {
+                padding: 0 .3em;
+                background-image: linear-gradient(to right,rgba(0,0,0,0) 50%, rgb(255,255,0) 50%);
+                background-position: 0 0;
+                background-size: 200% auto;
+                transition: .3s;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+            h2 a:hover {
+                background-position: -100% 0;
+                color: #fff;
+                animation:big 0.1s;
+                animation-fill-mode: forwards;
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+            }
+            h2 a:active {
+                animation:small 0.1s;
+                animation-fill-mode: forwards;
+            }
+            //@keyframes big {
+               // 0% {transform: scale(1);} 
+                //100%{transform: scale(1.1);}}
+            //@keyframes small {
+                  
+                    //100%{transform: scale(0.9);}}
             
         }
     }

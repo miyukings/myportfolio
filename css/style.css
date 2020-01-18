@@ -539,23 +539,51 @@ section {
 @media (min-width: 768px) {
   #print {
     min-height: 100vh;
-    background: #000;
     color: gray;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 60% 40%;
     grid-template-columns: 60% 40%; }
-    #print footer.site-footer .site-nav {
-      margin-top: 0; }
     #print .split-box {
       height: 100%;
       margin-top: 150px; }
     #print .split-box:first-child {
       background: #fff; }
       #print .split-box:first-child img h2 p {
-        margin: 0 auto; }
+        -ms-flex-item-align: auto;
+        -ms-grid-row-align: auto;
+        align-self: auto; }
     #print .split-box:last-child {
-      background: #000; } }
+      background: #058d8d; }
+      #print .split-box:last-child h2 a {
+        padding: 0 .3em;
+        background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, yellow));
+        background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 50%, yellow 50%);
+        background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 50%, yellow 50%);
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, yellow 50%);
+        background-position: 0 0;
+        background-size: 200% auto;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1); }
+      #print .split-box:last-child h2 a:hover {
+        background-position: -100% 0;
+        color: #fff;
+        -webkit-animation: big 0.1s;
+        animation: big 0.1s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1); }
+      #print .split-box:last-child h2 a:active {
+        -webkit-animation: small 0.1s;
+        animation: small 0.1s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards; } }
 
 /* SCROLL TRIGGERED ANIMATION VIA SCROLLOUT */
 [data-scroll] {

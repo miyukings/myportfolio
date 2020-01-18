@@ -1,0 +1,99 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Miyuki Sekiguchi</title>
+    <meta name="description" content="A minimalistic HTML + CSS + JS base front-end framework for simple web site projects." />
+
+    <!-- VIEWPORT FOR MOBILE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- MAIN CSS FILE -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- FANCYBOX 3 CSS -->
+    <link rel="stylesheet" type="text/css" href="js/fancybox/dist/jquery.fancybox.min.css">
+
+    <!-- ADOBE FONTS-->
+    <link rel="stylesheet" href="https://use.typekit.net/bnm7oer.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="site-id">
+            <h1><a href="index.html">Miyuki Sekiguchi</a></h1>
+        </div>
+        <nav class="site-nav">
+            <div class="menu-button navicon">Menu</div>
+            <ul>
+
+                <li><a href="#works">works</a></li>
+                <li><a href="#about">about me</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="print">
+        <div class="split-box">
+
+
+            <img src="img/citylogo-black.jpg">
+            <h2>Art 127 Graphic Symbolism</h2>
+            <h3>City Logo Design</h3>
+            <p>In this assignment, I had to create a city logo to enhance its tourism and attract more people to
+                visit.
+                I wanted to create a unique city logo from a diffrent perspective, and I decided to use the cross
+                section of a artichoke.</p>
+        </div>
+
+        <div class="split-box">
+
+            <h2><a herf="#">Brand Logo</a></h2>
+            <h2><a herf="#">City Logo</a></h2>
+            <h2><a herf="#">Corporate Logo</a></h2>
+            <h2><a herf="#">Pictogram</a></h2>
+        </div>
+
+    </section>
+
+
+
+    <footer class="site-footer">
+        <nav class="site-nav">
+            <ul>
+                <li><a href="index.html">works</a></li>
+                <li><a href="#aboutme">about me</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+
+
+    <!-- SMOOTH SCROLL JS-->
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+
+    <!-- SCROOL OUT SCROLL TRIGGERD ANIMATION -->
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script>
+        ScrollOut({
+            threshold: 0.4
+        });
+    </script>
+
+
+    <!-- FANCYBOX 3 JS FILE -->
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/fancybox/dist/jquery.fancybox.min.js"></script>
+
+    <!--MAIN JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
