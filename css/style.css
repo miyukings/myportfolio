@@ -550,7 +550,7 @@ section {
     #print .split-box:first-child {
       background: #fff; }
     #print .split-box:last-child {
-      background: #058d8d; }
+      background: #000; }
       #print .split-box:last-child h2 a {
         text-decoration: none;
         padding: 0 .3em;
@@ -574,8 +574,8 @@ section {
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
         -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1); }
+        -ms-transform: scale(2.1);
+        transform: scale(2.1); }
       #print .split-box:last-child h2 a:active {
         -webkit-animation: small 0.1s;
         animation: small 0.1s;

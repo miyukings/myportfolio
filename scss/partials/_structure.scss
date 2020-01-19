@@ -382,7 +382,7 @@ section {
         
 
         .split-box:last-child {
-            background: rgb(5, 141, 141);
+            background: #000;
             h2 a {
                 text-decoration: none;
                 padding: 0 .3em;
@@ -399,7 +399,7 @@ section {
                 animation:big 0.1s;
                 animation-fill-mode: forwards;
                 -webkit-transform: scale(1.1);
-                transform: scale(1.1);
+                transform: scale(2.1);
             }
             h2 a:active {
                 animation:small 0.1s;
